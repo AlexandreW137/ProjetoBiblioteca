@@ -112,15 +112,12 @@ body {
     margin-bottom: 20px;
 }
 
-@media (max-height: 500px) {
+@media (min-height: 600px) {
     .social_media {
         display: none !important;
     }
 
-    .img-livro {
-        width: 160px !important;
-        height: 10px;
-    }
+
 
 
     .wrapper .sidebar {
@@ -233,7 +230,13 @@ body {
 }
 
 .img-livro {
-
     width: 16%;
     height: auto;
+}
+
+
+@media screen and (max-width:800px) {
+    .img-livro {
+        width: 49%;
+    }
 }
