@@ -247,6 +247,13 @@ body {
     }
 }
 
+@media screen and (max-width:500px) {
+    .img-livro {
+        width: 100%;
+        height: 300px;
+    }
+}
+
 #main article img {
     border: solid black 5px;
     height: 360px;
