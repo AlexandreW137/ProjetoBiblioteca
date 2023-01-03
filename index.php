@@ -77,7 +77,7 @@
 
                     </div>
                     <div id="myBtnContainer" class="col-md-12">
-                        <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
+
                         <button class="btn" onclick="filterSelection('fantasy')"> Fantasia</button>
                         <button class="btn" onclick="filterSelection('romance')"> Romance</button>
                         <button class="btn" onclick="filterSelection('autoBiograpghy')"> Auto bibiografia</button>
