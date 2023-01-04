@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "basic-info basic-info basic-info"
+        "recomendacoes recomendacoes recomendacoes"
+        "footer footer footer"
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ul {
+    display: flex;
+
+}
+
+ul li {
+    padding: 15px;
+    list-style: none;
+
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+li a:hover {
+    color: white;
+    transition: ease-in-out 1s;
+}
+
+.o-header {
+    grid-area: header;
+    background-color: rgb(233, 37, 86);
+    padding: 1.5rem;
+}
+
+.o-main {
+    grid-area: main;
+    background-color: white;
+    height: auto;
+
+}
+
+.o-footer {
+    grid-area: footer;
+    background-color: grey;
+    padding: 1rem;
+
+
+    width: 100vw;
+}
+
+picture img {
+    width: 180px;
+    margin-right: 50px;
+
+}
+
+.livro {
+    align-items: flex-start;
+
+    display: flex;
+    float: left;
+
+    margin: 15px;
+}
+
+.info {
+    float: right;
+    max-width: 500px;
+}
+
+.reservar {
+    width: 130px;
+    background-color: green;
+    border: none;
+    border-radius: 9px;
+    padding: 10px;
+
+}
+
+.basic-info {
+    grid-area: basic-info;
+    background-color: white;
+    height: 40px;
+
+}
+
+.basico {
+    justify-content: left;
+
+    display: flex;
+
+}
+
+h5 {
+    margin: 0 10px 0 10px;
+}
+
+.autor img {
+    height: 160px;
+    border-radius: 200px;
+}
+
+.autor {
+    margin: 15px;
+}
+
+picture .pagina-autor {
+    text-align: center;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+picture .pagina-autor:hover {
+    color: darkblue;
+    transition: 2s;
+}
+
+@media screen and (max-width: 1005px) {
+
+    .autor img,
+    .pagina-autor {
+        height: 0;
+        display: none;
+    }
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+
+}
+
+.galeria img {
+    margin: 10px;
+    width: 90px;
+}
+
+.recomendacoes {
+    grid-area: recomendacoes;
+    border-top: solid 0.5px pink;
+}
