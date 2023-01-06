@@ -236,7 +236,7 @@ body {
 
 .img-livro {
     width: 16%;
-    height: 240px;
+    height: 350px;
 }
 
 
@@ -440,4 +440,36 @@ footer p {
 
 .h4-filtro {
     margin: 20px;
+}
+
+.pr-livros {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 650px) {
+    .mapa-escola {
+        min-width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .mapa-escola {
+        min-width: 600px;
+    }
+}
+
+.mapa {
+    text-align: center;
+
+}
+
+.mapa-escola {
+    min-width: 1400px;
+    height: 500px;
+    margin: 25px;
+}
+
+.pr-mapa {
+    margin-top: 50px;
 }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="front end/home/css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Ione Parcianello</h2>
+            <ul>
+
+                <div class="center">
+                    <h3 class="h3-conta">Minha Conta</h3>
+                </div>
+                <div class="suaconta">
+                    <div class="center">
+                        <li class="li-conta"><a href="../cadastro.html">Meu Perfil</a></li>
+                        <li class="li-conta"><a href="#">Minhas reservas</a></li>
+                        <li class="li-conta"><a href="#">Livros lidos</a></li>
+                    </div>
+                </div>
+
+
+                <div class="livros">
+                    <div class="center">
+                        <h3>Livros</h3>
+                    </div>
+                    <div class="center">
+                        <li class="li-livro"><a href="#">Recomendados</a></li>
+                        <li class="li-livro"><a href="#">Novos adicionados</a></li>
+                        <li class="li-livro"><a href="#">Pesquisa por categoria</a></li>
+                    </div>
+
+                </div>
+
+            </ul>
+
+            <div class="social_media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="header">
+                <div class="wrap">
+                    <div class="search2">
+                        <form method="GET" action="subpagina/pesquisa.php">
+                        <input type="text"name="nome_livro"class="searchTerm" placeholder="Pesquisar">
+                        <button type="submit" class="searchButton">
+                            
+                        </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="container-fuild">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center">
+                            <h4 class="h4-filtro">Categorias</h4>
+                        </div>
+                        <!-- Filter buttons -->
+
+                    </div>
+                    
+                    <div id="myBtnContainer" class="col-md-12">
+
+                        <button class="btn" onclick="filterSelection('fantasy')"> Fantasia</button>
+                        <button class="btn" onclick="filterSelection('romance')"> Romance</button>
+                        <button class="btn" onclick="filterSelection('autoBiograpghy')"> Auto bibiografia</button>
+                        <button class="btn" onclick="filterSelection('crimeDrama')"> Crime-Drama</button>
+                        <button class="btn" onclick="filterSelection('history')"> Historia</button>
+                        <button class="btn" onclick="filterSelection('fiction')"> Ficção</button>
+                        <button class="btn" onclick="filterSelection('childFiction')"> Infantil</button>
+                        <button class="btn" onclick="filterSelection('nonFiction')"> Não ficção</button>
+                        <button class="btn" onclick="filterSelection('thriller')"> Ação</button>
+                        <button class="btn" onclick="filterSelection('mystery')"> Misterio</button>
+                        <button class="btn" onclick="filterSelection('play')"> Play</button>
+                        <button class="btn" onclick="filterSelection('memoir')"> Memoria</button>
+                        <button class="btn" onclick="filterSelection('novel')"> Novela</button>
+                        <button class="btn" onclick="filterSelection('critique')"> Critica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="dropdown">
+                    <button class="dropbtn">Categorias </button>
+                    <div class="dropdown-content">
+                        <a onclick="filterSelection('all')"> Mostrar todos</a>
+                        <a onclick="filterSelection('fantasy')"> Fantasia</a>
+                        <a onclick="filterSelection('romance')"> Romance</a>
+                        <a onclick="filterSelection('autoBiograpghy')"> Auto bibiografia</a>
+                        <a onclick="filterSelection('crimeDrama')"> Crime-Drama</a>
+                        <a onclick="filterSelection('history')"> Historia</a>
+                        <a onclick="filterSelection('childFiction')"> Infantil</a>
+                        <a onclick="filterSelection('nonFiction')"> Não ficção</a>
+                        <a onclick="filterSelection('thriller')"> Ação</a>
+                        <a onclick="filterSelection('mystery')"> Misterio</a>
+                        <a onclick="filterSelection('play')"> Play</a>
+                        <a onclick="filterSelection('memoir')"> Memoria</a>
+                        <a onclick="filterSelection('novel')"> Novela</a>
+                        <a onclick="filterSelection('critique')"> Critica</a>
+                    </div>
+                </div>
+                <div class="info">
+                    <div>
+                        <div class="center">
+                            <h4 class="pr-livros">Recomendações: </h4>
+                        </div>
+                        <img class="img-livro" src="front end/imagens/livro.jpg">
+                        <img class="img-livro" src="front end/imagens/livro2.jpg">
+                        <img class="img-livro" src="front end/imagens/livro3.jpg">
+                        <img class="img-livro" src="front end/imagens/livro4.jpg">
+                        <img class="img-livro" src="front end/imagens/livro5.jpg">
+                        <img class="img-livro" src="front end/imagens/livro6.jpg">
+
+                    </div>
+                    <div>
+                        <div class="center">
+                            <h4 class="pr-livros">Novos livros:</h4>
+                        </div>
+                        <img class="img-livro" src="front end/imagens/livro.jpg">
+                        <img class="img-livro" src="front end/imagens/livro4.jpg">
+                        <img class="img-livro" src="front end/imagens/livro5.jpg">
+                        <img class="img-livro" src="front end/imagens/livro6.jpg">
+                        <img class="img-livro" src="front end/imagens/livro3.jpg">
+                        <img class="img-livro" src="front end/imagens/livro2.jpg">
+
+
+                    </div>
+                    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                    <script src="../javascript/script.js"></script>
+
+                    <h1 class="pr-mapa">De onde somos:</h1>
+
+                    <iframe class="mapa-escola"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.82652009882!2d-53.80383549053714!3d-29.724784016419786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9503cbc013ca4baf%3A0xa4c14da3e7f607a7!2sEscola%20Municipal%20de%20Ensino%20Fundamental%20Ione%20Medianeira%20Parcaianello!5e0!3m2!1spt-BR!2sbr!4v1670551320181!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+
+</html>
