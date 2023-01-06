@@ -6,3 +6,8 @@ Biblioteca escolar com os livros para serem locados pelos alunos, com sistema de
 * php
 * mysql
 
+## Coias para fazer ainda:
+* linkar com o banco
+* criar banco
+* criar página de perfil
+* adicionar a reserva
