@@ -1,7 +1,7 @@
 <?php
 include('../conexao.php');
 $nome = $mysqli->real_escape_string($_GET['nome_livro']);
-$sql_code = "SELECT * FROM livro WHERE nome LIKE '%$nome%'";
+$sql_code = "SELECT * FROM livros WHERE nome_livro LIKE '%$nome%'";
 
 $sql_query = $mysqli->query($sql_code) or die("Erro ao consultar!" . $mysqli->error);
 
@@ -60,7 +60,7 @@ $sql_query = $mysqli->query($sql_code) or die("Erro ao consultar!" . $mysqli->er
 
                 <?php
 
-                    echo "<h1>" . $dados['nome'] . "</h1>";
+                    echo "<h1>" . $dados['nome_livro'] . "</h1>";
 
                     ?>
                     
@@ -79,21 +79,19 @@ $sql_query = $mysqli->query($sql_code) or die("Erro ao consultar!" . $mysqli->er
                     <h4>Autor:</h4>
                     <p><em>Lorem, ipsum dolor.</em></p>
                     <br>
-                    <button class="reservar">reservar</button>
+                    <form method="post" action="config.php" >
+                    <input type="text" placeholder="Nome para retirada" name="nome">
+                    <input type="text" placeholder="digite sua matricula"name="matricula">  
+                    <button type="submit"class="reservar">reservar</button>
+                    </form>
+
+
+                    
 
                 </div>
 
             </div>
-            <aside class="o-aside">
-                <div class="autor">
-                    <picture>
-                        <img id="autor1" src="../../../imagens/autor.jfif" alt="">
-                        <br>
-                        <a class="pagina-autor" href="#">Lorem ipsum dolor sit.</a>
-                    </picture>
 
-                </div>
-            </aside>
 
         </main>
 
@@ -101,7 +99,7 @@ $sql_query = $mysqli->query($sql_code) or die("Erro ao consultar!" . $mysqli->er
             <div class="basico">
                 <h5>Número de páginas:</h5>
                 <?php
-             echo "<p>" . $dados['n_paginas'] . "</p>";
+             echo "<p>" . $dados['paginas'] . "</p>";
             }
                 ?>
                 
